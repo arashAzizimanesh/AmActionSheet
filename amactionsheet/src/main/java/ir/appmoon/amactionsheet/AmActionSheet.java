@@ -153,7 +153,9 @@ public class AmActionSheet {
         linearLayoutCancel.addView(cancelButton);
         if (view != null) {
 
-            LinearLayout.LayoutParams layoutParamsCustom = new LinearLayout.LayoutParams((int) (displayMetrics.widthPixels*0.87), ViewGroup.LayoutParams.WRAP_CONTENT);
+            view.setBackgroundResource(R.drawable.border_button);
+
+            LinearLayout.LayoutParams layoutParamsCustom = new LinearLayout.LayoutParams((int) (displayMetrics.widthPixels * 0.87), ViewGroup.LayoutParams.WRAP_CONTENT);
             layoutParamsCustom.bottomMargin = margin;
 
             layoutParamsCustom.gravity = Gravity.CENTER_HORIZONTAL;
@@ -180,8 +182,6 @@ public class AmActionSheet {
         snackbarLayout.setBackgroundColor(Color.TRANSPARENT);
 
         snackbarLayout.addView(snackView, 0);
-
-
 
 
     }
